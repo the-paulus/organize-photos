@@ -27,6 +27,20 @@ sudo pip install readexif
 pip install readexif
 ```
 
+### Installing python-magic on MacOS
+In order for the magic module to work on MacOS you will need to install libmagic using [MacPorts](https://www.macports.org/). In order to install packages from MacPorts, you will need to have XCode, which is a free download from the App Store. After downloading and installing Mac Ports and XCode, open the terminal and run the following commands:
+```
+xcode-select --install
+sudo port install libmagic 
+sudo pip install python-magic
+```
+
+### Installing python-magic on Windows
+See the instructions [here](https://github.com/ahupp/python-magic#dependencies) for installing libmagic.
+```
+pip install python-magic
+```
+
 ## Usage
 ```
 python organize_photos.py [-v] -s <source-directory> -d <destination-directory>
